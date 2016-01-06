@@ -1,0 +1,36 @@
+{
+  "name": "fxos-net",
+  "version": "0.1.2",
+  "description": "Node.js 'net' module for Firefox OS",
+  "homepage": "https://github.com/justindarc/fxos-net",
+  "license": "MIT",
+  "main": "fxos-net.js",
+  "browser": {
+    "net": "fxos-net.js"
+  },
+  "dependencies": {
+    "buffer": "^4.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1"
+  },
+  "scripts": {
+    "build": "browserify src/net.js --outfile fxos-net.js --standalone net && mkdir -p example/fxos-echo/lib && cp -rf fxos-net.js example/fxos-echo/lib/fxos-net.js",
+    "clean": "rm -rf fxos-net.js && rm -rf example/fxos-echo/lib/fxos-net.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/justindarc/fxos-net.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justindarc/fxos-net/issues"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "author": {
+    "name": "Justin D'Arcangelo",
+    "email": "justindarc@gmail.com",
+    "url": "https://github.com/justindarc"
+  }
+}

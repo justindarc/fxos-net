@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "name": "fxos-net",
+  "description": "An implementation of the Node.js `net` module for Firefox OS",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Justin D'Arcangelo",
+    "url": "https://github.com/justindarc"
+  },
+  "type": "privileged",
+  "permissions": {
+    "tcp-socket": {}
+  },
+  "default_locale": "en"
+}
